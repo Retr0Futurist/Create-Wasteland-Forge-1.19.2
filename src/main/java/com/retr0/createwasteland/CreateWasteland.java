@@ -1,8 +1,11 @@
 package com.retr0.createwasteland;
 
 import com.mojang.logging.LogUtils;
+import com.retr0.createwasteland.block.ModBlocks;
+import com.retr0.createwasteland.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -17,11 +20,14 @@ import org.slf4j.Logger;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(CreateWasteland.MOD_ID)
 public class CreateWasteland {
-    public static final String MOD_ID = "create-wasteland";
+    public static final String MOD_ID = "create_wasteland";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public CreateWasteland() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -29,6 +35,13 @@ public class CreateWasteland {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GLOWING_FUNGUS.getId(), ModBlocks.POTTED_GLOWING_FUNGUS);
+
+            // ModMessages.register();
+            // ModVillagers.registerPOIs();
+        });
+
 
     }
 

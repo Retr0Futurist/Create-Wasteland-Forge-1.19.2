@@ -1,0 +1,17 @@
+{
+  "item.create_wasteland.uranium_chunk": "Uranium Chunk",
+  "item.create_wasteland.uranium_ingot": "Uranium Ingot",
+  "item.create_wasteland.crushed_uranium_ore": "Crushed Uranium Ore",
+  "item.create_wasteland.raw_lead": "Raw Lead",
+  "item.create_wasteland.lead_ingot": "Lead Ingot",
+
+  "block.create_wasteland.uranium_ore_block": "Uranium Ore",
+  "block.create_wasteland.irradiated_stone": "Irradiated Stone",
+  "block.create_wasteland.irradiated_cobblestone": "Irradiated Cobblestone",
+  "block.create_wasteland.lead_ore": "Lead Ore",
+
+  "block.create_wasteland.glowing_fungus": "Glowing Fungus",
+  "block.create_wasteland.potted_glowing_fungus": "Potted Glowing Fungus",
+
+  "itemGroup.create_wastelandtab": "Create: Wasteland Ores"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create_wasteland:uranium_ore_block"
+    }
+  ],
+  "processingTime": 400,
+  "results": [
+    {
+      "item": "create_wasteland:crushed_uranium_ore"
+    },
+    {
+      "chance": 0.75,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.75,
+      "item": "create_wasteland:irradiated_stone"
+    }
+  ]
+}

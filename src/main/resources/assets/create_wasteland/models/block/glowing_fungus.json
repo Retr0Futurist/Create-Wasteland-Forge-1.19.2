@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "create_wasteland:block/glowing_fungus"
+  },
+  "render_type": "cutout"
+}

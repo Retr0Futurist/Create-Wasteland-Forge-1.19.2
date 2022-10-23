@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "create_wasteland:uranium_ore_block",
+    "create_wasteland:lead_ore"
+  ]
+}

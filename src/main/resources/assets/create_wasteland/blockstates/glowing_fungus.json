@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model":  "create_wasteland:block/glowing_fungus"
+    }
+  }
+}
