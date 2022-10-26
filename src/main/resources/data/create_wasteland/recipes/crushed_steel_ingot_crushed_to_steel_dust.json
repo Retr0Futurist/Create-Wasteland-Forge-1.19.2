@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create_wasteland:crushed_steel_ingot"
+    }
+  ],
+  "processingTime": 400,
+  "results": [
+    {
+      "item": "create_wasteland:steel_dust"
+    }
+  ]
+}

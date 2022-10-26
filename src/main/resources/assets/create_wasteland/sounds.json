@@ -1,0 +1,8 @@
+{
+  "geiger_counter_sound": {
+    "subtitle": "sounds.create_wasteland.geiger_counter_sound",
+    "sounds": [
+      "create_wasteland:geiger_counter_sound"
+    ]
+  }
+}

@@ -4,14 +4,31 @@
   "item.create_wasteland.crushed_uranium_ore": "Crushed Uranium Ore",
   "item.create_wasteland.raw_lead": "Raw Lead",
   "item.create_wasteland.lead_ingot": "Lead Ingot",
+  "item.create_wasteland.steel_ingot": "Steel Ingot",
+  "item.create_wasteland.steel_dust": "Steel Dust",
+  "item.create_wasteland.crushed_steel_ingot": "Crushed Steel Ingot",
+  "item.create_wasteland.steel_screw": "Steel Screw",
+  "item.create_wasteland.reinforced_lead_sandpaper": "Reinforced Lead Sandpaper",
+
+  "item.create_wasteland.geiger_counter": "Geiger Counter",
+  "item.create_wasteland.gasmask": "Gas Mask",
 
   "block.create_wasteland.uranium_ore_block": "Uranium Ore",
   "block.create_wasteland.irradiated_stone": "Irradiated Stone",
   "block.create_wasteland.irradiated_cobblestone": "Irradiated Cobblestone",
   "block.create_wasteland.lead_ore": "Lead Ore",
+  "block.create_wasteland.steel_casing": "Steel Casing",
+  "block.create_wasteland.uranium_block": "Block of Uranium",
+  "block.create_wasteland.lead_block": "Block of Lead",
+
 
   "block.create_wasteland.glowing_fungus": "Glowing Fungus",
   "block.create_wasteland.potted_glowing_fungus": "Potted Glowing Fungus",
 
-  "itemGroup.create_wastelandtab": "Create: Wasteland Ores"
+  "sounds.create_wasteland.geiger_counter_sound": "Geiger Counter Beeps",
+
+  "itemGroup.create_wasteland_oretab": "Create: Wasteland - Ore",
+  "itemGroup.create_wasteland_blockstab": "Create: Wasteland - Blocks",
+  "itemGroup.create_wasteland_toolstab": "Create: Wasteland - Tools",
+  "itemGroup.create_wasteland_itemstab": "Create: Wasteland - Items"
 }

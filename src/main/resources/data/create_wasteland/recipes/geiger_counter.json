@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "nEc",
+    "ggg"
+  ],
+  "key": {
+    "#": {
+      "item": "create:electron_tube"
+    },
+    "n": {
+      "item": "create:brass_sheet"
+    },
+    "E": {
+      "item": "create_wasteland:uranium_ingot"
+    },
+    "c": {
+      "item": "create:cogwheel"
+    },
+    "g": {
+      "item": "create:brass_ingot"
+    }
+  },
+  "result": {
+    "item": "create_wasteland:geiger_counter",
+    "count": 1
+  },
+  "group": "geiger counter"
+}

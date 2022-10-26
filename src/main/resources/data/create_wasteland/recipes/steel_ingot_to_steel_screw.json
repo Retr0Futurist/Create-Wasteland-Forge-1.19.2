@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i",
+    "i "
+  ],
+  "key": {
+    "i": {
+      "item": "create_wasteland:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "create_wasteland:steel_screw",
+    "count": 1
+  },
+  "group": "steel"
+}

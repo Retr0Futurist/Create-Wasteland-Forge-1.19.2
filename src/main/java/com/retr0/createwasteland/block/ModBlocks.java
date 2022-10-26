@@ -26,27 +26,43 @@ public class ModBlocks {
 
 
 
-// Add Blocks Here
+    // Ore
+    public static final RegistryObject<Block> LEAD_ORE = registerBlock("lead_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CREATE_WASTELAND_ORE);
+
     public static final RegistryObject<Block> URANIUM_ORE_BLOCK = registerBlock("uranium_ore_block",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
-                    UniformInt.of(3,7)), ModCreativeModeTab.CREATE_WASTELAND);
+                    UniformInt.of(3,7)), ModCreativeModeTab.CREATE_WASTELAND_ORE);
 
+
+    // Blocks
     public static final RegistryObject<Block> IRRADIATED_STONE = registerBlock("irradiated_stone",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CREATE_WASTELAND);
-
-    public static final RegistryObject<Block> LEAD_ORE = registerBlock("lead_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CREATE_WASTELAND);
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CREATE_WASTELAND_BLOCKS);
 
     public static final RegistryObject<Block> IRRADIATED_COBBLESTONE = registerBlock("irradiated_cobblestone",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CREATE_WASTELAND);
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CREATE_WASTELAND_BLOCKS);
 
+    public static final RegistryObject<Block> STEEL_CASING = registerBlock("steel_casing",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CREATE_WASTELAND_BLOCKS);
+
+    public static final RegistryObject<Block> URANIUM_BLOCK = registerBlock("uranium_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CREATE_WASTELAND_BLOCKS);
+
+    public static final RegistryObject<Block> LEAD_BLOCK = registerBlock("lead_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.CREATE_WASTELAND_BLOCKS);
+
+
+    // Plants
     public static final RegistryObject<Block> GLOWING_FUNGUS = registerBlock("glowing_fungus",
             () -> new FlowerBlock(MobEffects.GLOWING, 12,
-                    BlockBehaviour.Properties.copy(Blocks.DANDELION).lightLevel((state) -> 10)), ModCreativeModeTab.CREATE_WASTELAND);
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION).lightLevel((state) -> 10)), ModCreativeModeTab.CREATE_WASTELAND_BLOCKS);
 
     public static final RegistryObject<Block> POTTED_GLOWING_FUNGUS = BLOCKS.register("potted_glowing_fungus",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.GLOWING_FUNGUS,
